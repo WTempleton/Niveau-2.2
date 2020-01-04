@@ -1,0 +1,32 @@
+{
+  "name": "calculatrice-rendu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "\"we are live\"",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lint": "tsc --noEmit && eslint app.ts --quiet --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WTempleton/Niveau-2.2.git"
+  },
+  "author": "William Templeton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WTempleton/Niveau-2.2/issues"
+  },
+  "homepage": "https://github.com/WTempleton/Niveau-2.2#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "concurrently": "^5.0.2",
+    "eslint": "^6.8.0",
+    "lite-server": "^2.5.4",
+    "typescript": "^3.7.4"
+  }
+}
